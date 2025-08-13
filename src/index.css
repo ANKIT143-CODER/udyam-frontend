@@ -1,0 +1,204 @@
+/* Basic page setup */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f3f4f6;
+}
+
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Header styles */
+.header {
+  width: 100%;
+  background-color: #1e3a8a;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 15px;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.logo-text-hindi {
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  padding: 5px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.login-button {
+  background-color: #6366f1;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Main Content Styles */
+.main-content {
+  width: 100%;
+  max-width: 900px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.aadhaar-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden; 
+}
+
+.card-header {
+  background-color: #2563eb;
+  color: white;
+  padding: 20px;
+}
+
+.card-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.aadhaar-form, .pan-form, .otp-form, .registration-form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 250px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; 
+}
+
+.info-list {
+  margin-top: 20px;
+  padding-left: 20px;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.consent-checkbox-container {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.consent-checkbox {
+  margin-top: 4px;
+}
+
+.consent-label {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.submit-button {
+  background-color: #2563eb;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Error message styles */
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.input-error {
+  border-color: red;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
